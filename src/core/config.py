@@ -9,7 +9,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Getting variables from .env                                                       #
 # --------------------------------------------------------------------------------- #
 
-env = dotenv_values(find_dotenv())
+env = dotenv_values()
+
+print(BASE_DIR)
+print(env)
 
 
 def get_string(setting: str) -> str:
