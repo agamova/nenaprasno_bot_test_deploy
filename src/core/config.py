@@ -33,7 +33,7 @@ def get_bool(setting: str) -> bool:
 
 
 LOG_NAME = get_string("LOG_NAME")
-LOG_PATH = BASE_DIR / 'bot.log'
+LOG_PATH = BASE_DIR / LOG_NAME
 
 HOST = get_string("HOST")  # host для доступа к uvicorn серверу, по умолчанию localhost или 127.0.0.1
 WEBHOOK_URL = get_string("WEBHOOK_URL")  # адрес сервера, где будет запущен бот
