@@ -1,7 +1,7 @@
 from datetime import datetime
 from pathlib import Path
 
-from dotenv import dotenv_values
+from dotenv import dotenv_values, find_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Getting variables from .env                                                       #
 # --------------------------------------------------------------------------------- #
 
-env = dotenv_values()
+env = dotenv_values(find_dotenv())
 
 
 def get_string(setting: str) -> str:
