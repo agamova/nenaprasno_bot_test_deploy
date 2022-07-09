@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   bot:
-    build: agamova/ask_nenaprasno_bot
+    build: .
     restart: always
     ports:
       - "8000:8000"
