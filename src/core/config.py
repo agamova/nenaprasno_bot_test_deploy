@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = dotenv_values()
 
 print(BASE_DIR)
-print(env)
+print(**env)
 
 
 def get_string(setting: str) -> str:
