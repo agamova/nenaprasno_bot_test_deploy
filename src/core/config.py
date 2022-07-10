@@ -19,7 +19,8 @@ def get_string(setting: str) -> str:
 
 
 def get_int(setting: str) -> int:  
-    return int(env.get(setting)) or int(os.getenv(setting))
+    s = env.get(setting) or os.getenv(setting)
+    return int(s)
 
 
 def get_datetime(setting: str) -> datetime:
